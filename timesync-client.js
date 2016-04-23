@@ -126,7 +126,7 @@ Deps.autorun(function() {
 // somewhat lenient, or a CPU-intensive operation can trigger a re-sync even
 // when the offset is still accurate. In any case, we're not going to be able to
 // catch very small system-initiated NTP adjustments with this, anyway.
-var tickCheckTolerance = 0;
+var tickCheckTolerance = 50;
 
 var lastClientTime = Date.now();
 
