@@ -1,8 +1,8 @@
 Package.describe({
-  name: "mizzao:timesync",
+  name: "mduan:timesync",
   summary: "NTP-style time synchronization between server and client",
   version: "0.3.4",
-  git: "https://github.com/mizzao/meteor-timesync.git"
+  git: "https://github.com/mduan/meteor-timesync.git"
 });
 
 Package.onUse(function (api) {
@@ -32,7 +32,7 @@ Package.onTest(function (api) {
 
   api.use(["tracker", "underscore"], 'client');
 
-  api.use("mizzao:timesync");
+  api.use("mduan:timesync");
 
   api.addFiles('tests/client.js', 'client');
 });
